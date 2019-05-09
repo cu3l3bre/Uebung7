@@ -207,9 +207,15 @@ int main()
 
 	// Deklaration der Varianlen
 
-	string Wort = "hangman";
+	string Wort = "abcdefghijklmnopqrstuvwxyz";
 	char Buchstabe = char(0);
-	char EingegebeneBuchstaben[26];
+	// kann ich reduzieren, wenn ich eine erneute Eingabe eines bereits eingegebenen
+	//Buchstaben verbiete
+	// TODO muss ich noch irgendwie verbieten 
+	// ein kann bswp beim alphabet das "B" 30000000 mal eingebene, es ist kein Fehler, weil das B
+	// vorhanden ist, also hab ich irgendwann scheisse und muss das verrielgeln, das ich das 
+	// nochmal eingeben kann
+	char EingegebeneBuchstaben[40]; 
 	int LaengeWort = 0;
 	int Versuche = 0;
 	int Fehler = 0;
