@@ -10,7 +10,7 @@ void PictureHangman(int Fehlversuche)
 {
 	switch (Fehlversuche)
 	{
-	
+
 
 	case 1:
 		cout << "                                           	     " << endl;
@@ -76,7 +76,7 @@ void PictureHangman(int Fehlversuche)
 		cout << "___________________________________________/|_______" << endl;
 		cout << endl;
 		break;
-			   		 	
+
 
 	case 6:
 		cout << "                               ______________	     " << endl;
@@ -146,9 +146,9 @@ void PictureHangman(int Fehlversuche)
 		cout << "                                                    " << endl;
 		cout << "____________________________________________________" << endl;
 		cout << endl;
-		break; 
-		
-		
+		break;
+
+
 	}
 }
 
@@ -173,7 +173,7 @@ string SwitchStringToUppercase(string Wort)
 			Wort[i] = char(Zahl);
 		}
 	}
-	
+
 	return Wort;
 }
 
@@ -206,10 +206,10 @@ int main()
 	// Uebung 7 Hangman
 
 	// Deklaration der Varianlen
-	
+
 	string Wort = "hangman";
 	char Buchstabe = char(0);
-	char EingegebeneBuchstaben[MAX_VERSUCHE + 1];
+	char EingegebeneBuchstaben[26];
 	int LaengeWort = 0;
 	int Versuche = 0;
 	int Fehler = 0;
@@ -225,9 +225,9 @@ int main()
 
 
 	//Dynamisch Speicher anforden in Abhängkeit der Länge des zu ratenden Wortes
-	char* ArrayWort = new char[LaengeWort+1]; // +1 um den \0 für den string zu ergänzen, um keinen müll zu sehen
-	
-	// Neues Array mit _ Initen
+	char* ArrayWort = new char[LaengeWort + 1]; // +1 um den \0 für den string zu ergänzen, um keinen müll zu sehen
+
+												// Neues Array mit _ Initen
 	for (int i = 0; i < LaengeWort; i++)
 	{
 		ArrayWort[i] = char(95);
